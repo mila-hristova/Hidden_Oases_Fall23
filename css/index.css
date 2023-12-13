@@ -1,0 +1,550 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Scroll to top styles */
+.to-top {
+  background-color: var(--white);
+  color: var(--dark-green);
+  font-size: 32px;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+
+/* Navigation styles */
+nav ul li a {
+    text-decoration: none; /* Remove underline for all of them */
+     }
+
+
+     nav ul li:first-child a {
+    border-bottom: 2px solid #314c05;
+    padding-bottom: 4px;
+      }
+      
+#homeButton {
+  color: var(--dark-green);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    padding-top: 30px; /* Add padding above the links */
+    padding-bottom: 30px; /* Add padding below the links */
+    padding-right: 52px;
+    list-style: none;
+    font-weight: 300;
+
+  }
+  
+  nav li {
+    margin-left: 40px; /* Creates space between items */
+  }
+  
+
+
+/* Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--dark-green); /* Text color */
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F9F6EE; /* Background color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow */
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  /* Links inside the Dropdown */
+  .dropdown-content a {
+    color: var(--black); /* Text color */
+    padding: 24px 100px 24px 24px;
+    text-decoration: none;
+    display: block;
+    transition: font-weight 0.3s; /* Adding transition for smooth effect */
+    font-weight: 300;
+  }
+  
+  /* Change the link color on hover */
+  .dropdown-content a:hover {
+    font-weight: 500;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .book-button {
+    background-color: var(--dark-green);
+    color: var(--white);
+    border-radius: 50px;
+    padding: 12px 24px;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto; 
+    display: block; /* Ensure block display for responsiveness */
+  }
+
+
+.photos :hover {
+  cursor: pointer;
+}
+
+
+
+/* Home page content styles */
+.header-section h1 {
+    text-align: center;
+    padding-top: 80px; 
+  }
+
+.header-section h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 200;
+  }
+
+.header-section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    padding-top: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding-top: 100px;
+    padding-left: 150px;
+    max-width: 800px;
+    max-height: 324px;
+    font-weight: 300;
+    font-size: var(--medium);
+    line-height: 32.4px;
+  }
+  
+
+  .photos {
+    padding-top: 70px;
+    padding-left: 52px;
+    padding-right: 150px;
+    max-width: auto;
+    display: flex;
+  }
+  
+
+  .photos img {
+    width: 260px; /* Adjust based on your layout */
+    height: 350px; /* Adjust based on your layout */
+    margin-left: 20px; /* Adjust spacing between images */
+  }
+
+
+
+/* Mobile responsiveness for Home Page content */
+@media only screen and (max-width: 768px) {
+  .main-content {
+    display: block;
+  }
+
+  .header-section {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .text-section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .photos {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    display: block;
+  }
+
+  .photos img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 32px 0; /* Spacing between images */
+  }
+}
+
+
+
+
+
+  /* Divider styles */
+  .divider img {
+    width: 100%; 
+    max-width: auto; 
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+ 
+  
+/* Plukk section styles */
+.Plukk h4 {
+    position: relative;
+  }
+  
+  .Plukk h4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 24px); /* Extend the line to the left */
+    width: calc(100vw + 24px); /* Extend line to the left edge of the viewport */
+    height: 1px;
+    background-color: #314c05;
+    transform: translateY(-50%);
+    z-index: -1; /* Places the line behind the h4 text */
+  }
+  
+
+.Plukk {
+    padding-left: 150px;
+  }
+
+  .Plukk p {
+    padding-top: 4px;
+  }
+
+  .plukk_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: auto; /* Adjust this width as needed */
+    margin-top: 30px; /* Add some top margin */
+    padding-top: 52px;
+    padding-right: 150px;
+  }
+  
+  .plukk_photo {
+    flex: 1;
+    margin-right: 150px; /* Adjust the spacing between the photo and text */
+  }
+  
+  .plukk_photo img {
+    width: 410px;
+    height: 570px;
+  }
+  
+  .plukk_description {
+    line-height: 32.4px;
+  }
+  
+.buttons a {
+    text-decoration: none;
+}
+
+  #more-info-btn {
+    display: block;
+    margin-top: 36px; /* Adjust margin as needed */
+    padding: 16px 32px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid (--dark-green);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: var(--medium);
+  }
+  
+  /* Hover effect */
+  #more-info-btn:hover {
+    background-color: var(--beige);
+    border: none;
+  }
+
+
+
+
+/* Divider styles */
+  .divider {
+    width: 100%; 
+    max-width: auto; 
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+
+
+
+/* LYNfabrikken section styles */
+.lynfabrikken h4 {
+    position: relative;
+  }
+  
+  .lynfabrikken h4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 24px); /* Extend the line to the left */
+    width: calc(100vw + 24px); /* Extend line to the left edge of the viewport */
+    height: 1px;
+    background-color: #314c05;
+    transform: translateY(-50%);
+    z-index: -1; /* Places the line behind the h4 text */
+  }
+
+.lynfabrikken {
+    padding-left: 150px;
+  }
+
+  .lynfabrikken p {
+    padding-top: 4px;
+  }
+
+  .lynfabrikken_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: auto;
+    margin-top: 30px;
+    padding-top: 52px;
+    padding-right: 150px;
+  }
+  
+  .lynfabrikken_photo {
+    flex: 1;
+    margin-right: 150px; /* Adjust the spacing between the photo and text */
+  }
+  
+  .lynfabrikken_photo img {
+    width: 410px;
+    height: 570px;
+  }
+  
+  .lynfabrikken_description {
+    line-height: 32.4px;
+  }
+  
+.buttons a {
+    text-decoration: none;
+}
+
+  #more-info-btn {
+    display: block;
+    margin-top: 36px; /* Adjust margin as needed */
+    padding: 16px 32px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid (--dark-green);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: var(--medium);
+  }
+  
+  /* Hover effect */
+  #more-info-btn:hover {
+    background-color: var(--beige);
+    border: none;
+  }
+
+
+  /* Divider styles */
+  .divider {
+    width: 100%; 
+    max-width: auto; 
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+
+  /* Domen section styles */
+  .domen h4 {
+    position: relative;
+  }
+  
+  .domen h4::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 24px); /* Extend the line to the left */
+    width: calc(100vw + 24px); /* Extend line to the left edge of the viewport */
+    height: 1px;
+    background-color: #314c05;
+    transform: translateY(-50%);
+    z-index: -1; /* Places the line behind the h4 text */
+  }
+  
+  .domen  {
+    padding-left: 150px;
+  }
+
+  .domen p {
+    padding-top: 4px;
+  }
+
+  .domen_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: auto; /* Adjust this width as needed */
+    margin-top: 30px; /* Add some top margin */
+    padding-top: 52px;
+    padding-right: 150px;
+  }
+  
+  .domen_photo {
+    flex: 1;
+    margin-right: 150px; /* Adjust the spacing between the photo and text */
+  }
+  
+  .domen_photo img {
+    width: 410px;
+    height: 570px;
+  }
+  
+  .domen_description {
+    line-height: 32.4px;
+  }
+  
+.buttons a {
+    text-decoration: none;
+}
+
+  #more-info-btn {
+    display: block;
+    margin-top: 36px; /* Adjust margin as needed */
+    padding: 16px 32px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid (--dark-green);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: var(--medium);
+  }
+  
+  /* Hover effect */
+  #more-info-btn:hover {
+    background-color: var(--beige);
+    border: none;
+  }
+
+
+  /* Footer styles */
+  footer {
+    margin-top: 80px;
+  }
+
+  .footer-container {
+    background-color: #314c05;
+    color: var(--white);
+    padding-top: 80px;
+    padding-left: 150px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  h5 {
+    font-family: 'Great Memories';
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .footer-column p {
+    font-size: 16px;
+    font-weight: 150;
+    line-height: 25.9px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .footer-column a {
+    color: var(--white);
+  }
+
+
+/* Mobile responsiveness for Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    display: block; /* Change to block display for mobile */
+    padding: 20px;
+  }
+  
+  .footer-column {
+    flex: auto;
+    padding: 0;
+    margin-bottom: 32px; /* Margin between columns */
+  }
+
+  .footer-column h5 {
+    text-align: center;
+  }
+
+  .footer-column p {
+    text-align: center;
+  }
+
+}
+
+
+  
