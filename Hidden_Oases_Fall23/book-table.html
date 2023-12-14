@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HiddenOases</title>
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="css/book-table.css">
+  <script src="https://kit.fontawesome.com/9aee2a679a.js"></script>
+</head>
+<body>
+
+
+<!-- Scroll-to-top button -->
+<a href="#" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+<!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html" id="homeButton">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Places</a>
+          <div class="dropdown-content">
+            <a href="plukk.html">Plukk</a>
+            <a href="lynfabrikken.html">LYNfabrikken</a>
+            <a href="domen.html">Domen</a>
+          </div>
+        </li>
+        <li><a href="book-table.html" class="book-button">Book a table</a></li>
+      </ul>
+    </nav>
+
+
+<!-- Divider -->
+<div class="divider">
+    <img src="images/Divider.png" alt="Divider" />
+  </div>
+
+
+<h4>Reserve your spot!</h4>
+
+
+
+<!-- Input fields -->
+<div class="booking-form">
+    <div class="left-inputs">
+        <label for="place">Place:</label>
+        <select id="place" name="place">
+            <option value="Plukk">Plukk</option>
+            <option value="LYNfabrikken">LYNfabrikken</option>
+            <option value="Domen">Domen</option>
+        </select><br><br>
+
+        <label for="booking-date">Booking Date:</label>
+        <input type="date" id="booking-date" name="booking-date"><br><br>
+
+        <label for="booking-time">Booking Time:</label>
+        <input type="time" id="booking-time" name="booking-time"><br><br>
+
+        <label for="no-of-people">No. of People:</label>
+        <input type="number" id="no-of-people" name="no-of-people"><br><br>
+    </div>
+
+    <div class="right-inputs">
+        <label for="name-surname">Name & Surname:</label>
+        <input type="text" id="name-surname" name="name-surname"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number"><br><br>
+    </div>
+</div>
+
+<div class="full-width-input">
+    <label for="additional-comments">Additional Comments:</label><br>
+    <textarea id="additional-comments" name="additional-comments" rows="4" cols="50"></textarea><br><br>
+</div>
+
+
+
+<!-- Book a table button -->
+    <div class="book-confirmation">
+        <a href="#" id="bookButton">Book a table</a>
+    </div>
+
+
+<!-- Pop up notification -->
+<div class="modal" id="confirmationModal">
+    <div class="modal-content">
+        <p>You have successfully booked a table! <br><br>See you soon!</p>
+        <button id="closeModalBtn">OK</button>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h5>Plukk</h5>
+        <p>Kjeld Tolstrups Gade 8-12<br>8000, Aarhus C<br>CVR: 37617903<br><br>TELEFON: +45 61 10 61 01<br><br>
+          <a href="https://www.instagram.com/__plukk/">Instagram</a><br>
+          <a href="https://www.facebook.com/plukk.dk/">Facebook</a></p>
+      </div>
+      <div class="footer-column">
+        <h5>LYNfabrikken</h5>
+        <p>Vestergade 49B<br>8000, Aarhus C<br>CVR: 29477914<br><br>TELEFON: +45 26 14 22 29<br><br>
+          <a href="https://www.instagram.com/lynfabrikken/">Instagram</a><br>
+          <a href="https://www.facebook.com/lynfabrikken">Facebook</a></p>
+      </div>
+      <div class="footer-column">
+        <h5>Domen</h5>
+        <p>Inge Lehmanns gade 22<br>8000, Aarhus Ø<br>CVR: 37617903<br><br>TELEFON: +45 41 87 22 50<br><br>
+          <a href="https://www.instagram.com/domeniaarhus/">Instagram</a><br>
+          <a href="https://www.facebook.com/domenaarhus">Facebook</a></p>
+      </div>
+    </div>
+  </footer>
+  
+
+
+</main>
+<script src="js/js.js"></script>
+</body>
+</html>
